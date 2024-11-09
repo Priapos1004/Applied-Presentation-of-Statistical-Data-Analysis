@@ -79,7 +79,7 @@ These variables always refer to the member's company.
 | --- | --- | --- | --- |
 | IN_CONTACT | Has the member contacted the union? | binary | sum |
 | CATEGORY_i | One-hot categories for all contact reasons, e.g. labour legal protection advice or update of contact details | binary | max |
-| STATUS_SENTIMENT | Mean sentiment of contact reasons (1- positive, 0- neutral, -1- negative) | continuous | mean |
+| STATUS_SENTIMENT | Mean sentiment of how the contact ended (1- positive, 0- neutral, -1- negative), e.g. cancellation by the member has -1 and issue resolved has 1 | continuous | mean |
 
 ## Dynamic Data
 
