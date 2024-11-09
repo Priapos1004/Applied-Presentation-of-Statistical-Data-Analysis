@@ -3,7 +3,7 @@ This repository contains the scripts of the theoretical background and applied p
 
 ## Theoretical Background Scripts
 
-The following tables contain a mapping of Python scripts to the content in the theoretical background where they appear.
+The following tables contain a mapping of Python scripts to the content in the theoretical background where their results appear.
 
 ### Violation of Assumptions
 
@@ -13,7 +13,7 @@ The following tables contain a mapping of Python scripts to the content in the t
 | Right-tailed one-sided t-test | Independence of oberservations | Table 1 | [t_test_no_independence.py](theoretical%20background%20scripts/t_test_no_independence.py) |
 | Two-sided t-test for independent samples | Homoscedasticity | Table 2 | [t_test_no_homoscedasticity.py](theoretical%20background%20scripts/t_test_no_homoscedasticity.py) |
 | ANCOVA | Linearity | Figure 3, Table 3-5 | [ancova_no_linearity.py](theoretical%20background%20scripts/ancova_no_linearity.py) |
-| Mann-Whitney U Test | Independence of observations | Table 6 | [mwu_test_no_independence.py](theoretical%20background%20scripts/mwu_test_no_independence.py) |
+| Mann-Whitney U test | Independence of observations | Table 6 | [mwu_test_no_independence.py](theoretical%20background%20scripts/mwu_test_no_independence.py) |
 | EFA | Independence of observations | Figure 4 | [efa_no_independence.py](theoretical%20background%20scripts/efa_no_independence.py) |
 | EFA | Linearity | Table 8-9 | [efa_no_linearity.py](theoretical%20background%20scripts/efa_no_linearity.py) |
 | PCA | Homoscedasticity | Table 10-11 | [pca_no_homoscedasticity.py](theoretical%20background%20scripts/pca_no_homoscedasticity.py) |
@@ -36,3 +36,7 @@ The following tables contain a mapping of Python scripts to the content in the t
 | Homoscedasticity | Bartlett's and Levene's test | Table 18 | [homoscedasticity_bartlett_levene.py](theoretical%20background%20scripts/homoscedasticity_bartlett_levene.py) |
 | Linearity | Ramsey RESET test | Table 19 | [linearity_ramsey_reset_test.py](theoretical%20background%20scripts/linearity_ramsey_reset_test.py) |
 | Absence of multicollinearity | VIF | Table 20 | [multicollinearity_vif.py](theoretical%20background%20scripts/multicollinearity_vif.py) |
+
+## Applied Part Scripts
+
+A description of the used variables can be found [here](VARIABLES.md).
