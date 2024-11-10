@@ -15,12 +15,7 @@ stat_boxcox, p_boxcox = stats.shapiro(data_boxcox)
 print(f'Box-Cox transformed data: statistics {stat_boxcox:.4f}, p-value {p_boxcox:.4f}, and lambda {lambda_boxcox:.2f}')
 
 # 3. Apply Johnson SU Transformation
-# Johnsonsu.fit returns four parameters (a, b, loc, scale)
-params = stats.johnsonsu.fit(data_skewed)
-# Transform data using the fitted Johnson parameters
-data_johnson_transformed = stats.johnsonsu.rvs(*params, size=len(data_skewed))
-# Check for any infinite or NaN values
-data_johnson_transformed = data_johnson_transformed[np.isfinite(data_johnson_transformed)]
+data_yeojohnson, lambda_yeojohnson = stats.yeojohnson(data_skewed)
 # Shapiro-Wilk test for Johnson-transformed data
-stat_johnson, p_johnson = stats.shapiro(data_johnson_transformed)
-print(f'Johnson transformed data: statistics {stat_johnson:.4f} and p-value {p_johnson:.4f}')
+stat_yeojohnson, p_yeojohnson = stats.shapiro(data_yeojohnson)
+print(f'Johnson transformed data: statistics {stat_yeojohnson:.4f}, p-value {p_yeojohnson:.4f}, and lambda {lambda_yeojohnson:.2f}')

@@ -12,7 +12,7 @@ The lagged variables are aggregated using the specified function from the table 
 | ADVERT_personal, ADVERT_union, ADVERT_none | Was there advertising (personal or from union) involved in the person joining? | binary | - |
 | ONLINEENTRY | Did the person sign up for the union online? | binary | - |
 | MEMBERSHIP_LENGTH | Membership length in years | continuous | - |
-| BANK_i | Is the member registered by bank i on reference date? | binary | - |
+| BANK_i | Is the member registered by bank i on reference date? *(Note: included as some banks correlate with churns)* | binary | - |
 | POSTCODE_current | Member's current postcode | continuous | - |
 | `EXIT` | Does the member churn in the next nine months after reference date? | binary | - |
 
@@ -69,7 +69,7 @@ These variables always refer to the member's company.
 
 | **Variable** | **Description** | **Data Type** | **Aggregate Function** |
 | --- | --- | --- | --- |
-| COMMROLE_i_j | One-hot categories for all commitees i and roles j that appear for more than 1% of the data. Corresponds to internal roles like "Chief Executive Officer" and committees like "Works Council" or "In-house bargaining committee". GREMFUNC_999999 for combination with appearance less than 1% | binary | max |
+| COMMROLE_i_j | One-hot categories for all commitees i and roles j that appear for more than 1% of the data. Corresponds to internal roles like "Chief Executive Officer" and committees like "Works Council" or "In-house bargaining committee". COMMROLE_999999 for combination with appearance less than 1% | binary | max |
 | RANK_max | Maximum rank of all committee and role combinations of member (using responsibility ranking of combinations) | continuous | max |
 | RANK_sum | Sum of ranks of all committee and role combinations of member (using responsibility ranking of combinations) | continuous | sum |
 
