@@ -111,3 +111,5 @@ Due to insufficient variation (i.e., where one category occurs in less than 0.5%
 | CATEGORY_i | Several contact reasons were removed, including the CATEGORY_other_legal_protection variable |
 | CONTRIBUTION_exemption, CONTRIBUTION_IN_INSTALLMENTS | - |
 | EMPLOYMENT_STATUS_i | Several employment statuses were removed |
+
+Additionally, two BAMOUNT_i variables were removed due to insufficient variation.
