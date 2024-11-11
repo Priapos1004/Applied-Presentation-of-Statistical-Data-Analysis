@@ -25,6 +25,7 @@ def run_study(df_old: pd.DataFrame, df_new: pd.DataFrame, subsets: list[str]):
         binary_columns = [col for col in X_train.columns if (X_train[col].nunique() == 2) and (X_train[col].mean()<0.995) and (X_train[col].mean()>0.005)]
         non_binary_columns = [col for col in X_train.columns if X_train[col].nunique() > 2]
         combined_columns = binary_columns + non_binary_columns
+        logger.info(f'Using {len(combined_columns)} of {len(X_train.columns)} columns')
         logger.debug(f'Binary columns (number: {len(binary_columns)}):\n{binary_columns}\n')
         logger.debug(f'Non-binary columns (number: {len(non_binary_columns)}):\n{non_binary_columns}\n')
         # X and y values of new data

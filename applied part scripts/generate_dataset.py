@@ -85,7 +85,6 @@ DATA = [
     ['CATEGORY_social_legal_protection', 'max', 'binary', 0, 1],
     ['CATEGORY_labour_legal_protection', 'max', 'binary', 0, 1],
     ['CATEGORY_other_legal_protection', 'max', 'binary', 0, 1],
-    ['CATEGORY_update_data', 'max', 'binary', 0, 1],
     ['CATEGORY_i', 'max', 'binary', 0, 1],
     ['STATUS_SENTIMENT', 'mean', 'float', -1, 1],
 

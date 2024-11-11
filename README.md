@@ -6,7 +6,7 @@ This repository contains the scripts of the theoretical background and applied p
 Python version 3.11.9 was used to run the scripts. Additionally, the following packages were installed using pip:
 
 | **Library** | **Version** |
-| --- | --- |
+| --- | :---: |
 | pandas | 2.2.3 |
 | tqdm | 4.67.0 |
 | scikit-learn | 1.5.2 |
@@ -79,3 +79,35 @@ python applied\ part\ scripts/1_study.py
 The scripts will use an artifical dataset, which has the original variable structure but is populated with random values. The ranges for the random values were estimated by ChatGPT4 based on the variable descriptions and without additional knowledge about the dataset. The script for generating the data is [generate_dataset.py](applied%20part%20scripts/generate_dataset.py).
 
 You can modify the row number of the artificial dataset as well as the logging settings of the applied part's scripts in [config.py](applied%20part%20scripts/config.py).
+
+### Removed Variables
+
+Due to insufficient variation (i.e., where one category occurs in less than 0.5% of cases), the following binary variables were removed in the "Feature importance analysis" experiment.
+
+#### Subset "over 65"
+
+| **Variable** | **Note** |
+| --- | --- |
+| BAMOUNT_BINARY | - |
+| SEMINARTYPE_i | Several seminartypes were removed |
+| TEMPLATE_i | Several document templates were removed |
+| firm_SUPPORT_REPRESENTATIVE_ratio, firm_REPRESENTATIVE_WrCStC | - |
+| firm_COMPANYTYPE_i | Several company types were removed |
+| COMMROLE_i_j | Several commitee and role combinations were removed |
+| CATEGORY_i | Several contact reasons were removed, including all legal protection advice variables |
+| CONTRIBUTION_IN_INSTALLMENTS | - |
+| PAYDELAY_1A, PAYDELAY_1B, PAYDELAY_B | - |
+| EMPLOYMENT_STATUS_i, EMPLOYMENT_TYPE_i | Several employment statuses and types were removed |
+
+#### Subset "newcomer"
+
+| **Variable** | **Note** |
+| --- | --- |
+| SEMINARTYPE_i | Several seminartypes were removed |
+| TEMPLATE_i | Several document templates were removed |
+| firm_REPRESENTATIVE_WrCStC, firm_VALID_TARIFF | - |
+| firm_COMPANYTYPE_i, firm_SECTOR_i | Several company types and sectors were removed |
+| COMMROLE_i_j | Several commitee and role combinations were removed |
+| CATEGORY_i | Several contact reasons were removed, including the CATEGORY_other_legal_protection variable |
+| CONTRIBUTION_exemption, CONTRIBUTION_IN_INSTALLMENTS | - |
+| EMPLOYMENT_STATUS_i | Several employment statuses were removed |
