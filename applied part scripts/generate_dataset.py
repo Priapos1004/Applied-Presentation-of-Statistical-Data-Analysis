@@ -8,7 +8,7 @@ np.random.seed(42)
 
 # The ranges are estimated by GPT4o without additional knowledge about the data
 DATA = [
-    # Basis Data
+    # Basic Data
     ['SEX', '-', 'binary', 0, 1],
     ['AGE', '-', 'int', 18, 80],
     ['BIRTHMONTH', '-', 'int', 1, 12],

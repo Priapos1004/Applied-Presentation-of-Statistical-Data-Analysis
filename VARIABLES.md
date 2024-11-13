@@ -2,7 +2,7 @@
 
 The lagged variables are aggregated using the specified function from the table over 3-month, 6-month, and 12-month periods. The variables in the tables represent the original monthly time series. Notably, even if the original monthly variable was binary, the lagged variable can be continuous, depending on the aggregation method (e.g., sum). If the "Aggregate Function" column contains a "-", it indicates that the original variable was used directly without any lags.
 
-## Basis Data
+## Basic Data
 
 | **Variable** | **Description** | **Data Type** | **Aggregate Function** |
 | --- | --- | --- | --- |
