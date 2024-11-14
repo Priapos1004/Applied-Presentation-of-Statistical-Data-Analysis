@@ -11,7 +11,7 @@ Notably, although the original monthly variable may be binary, the lagged versio
 | SEX | Sex of the member (1- female, 0- male) | binary | - |
 | AGE | Age in years on reference date | continuous | - |
 | BIRTHMONTH | Birthmonth of member | continuous | - |
-| ADVERT_personal, ADVERT_union, ADVERT_none | Was there advertising (personal or from union) involved in the person joining? | binary | - |
+| ADVERT_personal, ADVERT_union, ADVERT_none | Was there advertising (personal or from the union) involved in the person joining? | binary | - |
 | ONLINEENTRY | Did the person sign up for the union online? | binary | - |
 | MEMBERSHIP_LENGTH | Membership length in years | continuous | - |
 | BANK_i | Is the member registered by bank i on reference date? *(Note: included as some banks correlate with churns)* | binary | - |
@@ -44,7 +44,7 @@ Notably, although the original monthly variable may be binary, the lagged versio
 
 | **Variable** | **Description** | **Data Type** | **Aggregate Function** |
 | --- | --- | --- | --- |
-| TEMPLATE_i | Template document i was send by the union to the member, like "welcome letter" *(Note: excluded "membership termination confirmation" for data leakage reasons)* | binary | max |
+| TEMPLATE_i | Template document i was sent by the union to the member, like "welcome letter" *(Note: excluded "membership termination confirmation" for data leakage reasons)* | binary | max |
 
 ## Firm Data
 
@@ -60,7 +60,7 @@ These variables always refer to the member's company.
 | firm_EMPLOYEES_ratio | Ratio of employees to union members at the company | continuous | mean |
 | firm_EMPLOYEES_F, firm_EMPLOYEES_M | Ratio of female / male employees to union members at the company | continuous | mean |
 | firm_SECTOR_i | Sector of the company, e.g. healthcare, municipalities, or education | binary | max |
-| firm_REPRESENTATIVE_WrC, firm_REPRESENTATIVE_StC, firm_REPRESENTATIVE_WrCStC | Is there a union's represantative in the company's works council, staff council, or both? | binary | max |
+| firm_REPRESENTATIVE_WrC, firm_REPRESENTATIVE_StC, firm_REPRESENTATIVE_WrCStC | Is there a union's representative in the company's works council, staff council, or both? | binary | max |
 | firm_YOUTHRATIO | Percentage of young people at the company | continuous | mean |
 | firm_MEMBERS_TOTAL | Total number of union members at the company | continuous | mean |
 | firm_MEMBERS_F, firm_MEMBERS_M | Percentage of female / male union members at the company | continuous | mean |
@@ -71,7 +71,7 @@ These variables always refer to the member's company.
 
 | **Variable** | **Description** | **Data Type** | **Aggregate Function** |
 | --- | --- | --- | --- |
-| COMMROLE_i_j | One-hot categories for all commitees i and roles j that appear for more than 1% of the data. Corresponds to internal roles like "Chief Executive Officer" and committees like "Works Council" or "In-house bargaining committee". COMMROLE_999999 for combination with appearance less than 1% | binary | max |
+| COMMROLE_i_j | One-hot categories for all committees i and roles j that appear for more than 1% of the data. Corresponds to internal roles like "Chief Executive Officer" and committees like "Works Council" or "In-house bargaining committee". COMMROLE_999999 for combination with appearance less than 1% | binary | max |
 | RANK_max | Maximum rank of all committee and role combinations of member (using responsibility ranking of combinations) | continuous | max |
 | RANK_sum | Sum of ranks of all committee and role combinations of member (using responsibility ranking of combinations) | continuous | sum |
 

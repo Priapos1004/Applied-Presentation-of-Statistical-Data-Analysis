@@ -39,7 +39,7 @@ The following tables contain a mapping of Python scripts to the content in the t
 | **Method** | **Assumption** | **Figure** | **File** |
 | --- | --- | --- | --- |
 | Right-tailed one-sided t-test | Normality | Figure 2 | [t_test_no_normality.py](theoretical%20background%20scripts/t_test_no_normality.py) |
-| Right-tailed one-sided t-test | Independence of oberservations | Table 1 | [t_test_no_independence.py](theoretical%20background%20scripts/t_test_no_independence.py) |
+| Right-tailed one-sided t-test | Independence of observations | Table 1 | [t_test_no_independence.py](theoretical%20background%20scripts/t_test_no_independence.py) |
 | Two-sided t-test for independent samples | Homoscedasticity | Table 2 | [t_test_no_homoscedasticity.py](theoretical%20background%20scripts/t_test_no_homoscedasticity.py) |
 | ANCOVA | Linearity | Figure 3, Table 3-5 | [ancova_no_linearity.py](theoretical%20background%20scripts/ancova_no_linearity.py) |
 | Mann-Whitney U test | Independence of observations | Table 6 | [mwu_test_no_independence.py](theoretical%20background%20scripts/mwu_test_no_independence.py) |
@@ -93,11 +93,11 @@ Due to insufficient variation (i.e., where one category occurs in less than 0.5%
 | **Variable** | **Note** |
 | --- | --- |
 | BAMOUNT_BINARY | - |
-| SEMINARTYPE_i | Several seminartypes were removed |
+| SEMINARTYPE_i | Several seminar types were removed |
 | TEMPLATE_i | Several document templates were removed |
 | firm_SUPPORT_REPRESENTATIVE_ratio, firm_REPRESENTATIVE_WrCStC | - |
 | firm_COMPANYTYPE_i | Several company types were removed |
-| COMMROLE_i_j | Several commitee and role combinations were removed |
+| COMMROLE_i_j | Several committee and role combinations were removed |
 | CATEGORY_i | Several contact reasons were removed, including all legal protection advice variables |
 | CONTRIBUTION_IN_INSTALLMENTS | - |
 | PAYDELAY_1A, PAYDELAY_1B, PAYDELAY_B | - |
@@ -107,11 +107,11 @@ Due to insufficient variation (i.e., where one category occurs in less than 0.5%
 
 | **Variable** | **Note** |
 | --- | --- |
-| SEMINARTYPE_i | Several seminartypes were removed |
+| SEMINARTYPE_i | Several seminar types were removed |
 | TEMPLATE_i | Several document templates were removed |
 | firm_REPRESENTATIVE_WrCStC, firm_VALID_TARIFF | - |
 | firm_COMPANYTYPE_i, firm_SECTOR_i | Several company types and sectors were removed |
-| COMMROLE_i_j | Several commitee and role combinations were removed |
+| COMMROLE_i_j | Several committee and role combinations were removed |
 | CATEGORY_i | Several contact reasons were removed, including the CATEGORY_other_legal_protection variable |
 | CONTRIBUTION_exemption, CONTRIBUTION_IN_INSTALLMENTS | - |
 | EMPLOYMENT_STATUS_i | Several employment statuses were removed |
