@@ -68,7 +68,7 @@ The following tables contain a mapping of Python scripts to the content in the t
 
 ## Applied Part Scripts
 
-The basis of the analysis was a pseudonymised dataset from a European labourde union. The content and scope of the analysis, as well as provisions regarding the use and anonymisation of the data, were contractually agreed upon. All data were effectively anonymised in accordance with Article 4, No. 1 of the GDPR and Recital 26, Sentences 3-5 for scientific use: direct identifiers were deleted, and indirect identifiers were generalised, e.g., by aggregation (monthly total) or categorisation (e.g., birth month instead of birth date, document type X without document content or subject lines).
+The basis of the analysis was an anonymised dataset from a European labour union. The content and scope of the analysis, as well as provisions regarding the use and anonymisation of the data, were contractually agreed upon. All data were effectively anonymised in accordance with Article 4, No. 1 of the GDPR and Recital 26, Sentences 3-5 for scientific use: direct identifiers were deleted, and indirect identifiers were generalised, e.g., by aggregation (monthly total) or categorisation (e.g., birth month instead of birth date, document type X without document content or subject lines).
 
 The research dataset containing the anonymised data was exclusively utilised and processed on a remote server of the union. Access to other servers or data of the union was not permitted. Storage or extraction of the anonymised data was not possible and was contractually prohibited.
 
