@@ -15,15 +15,15 @@ Notably, although the original monthly variable may be binary, the lagged versio
 | ONLINEENTRY | Did the person sign up for the union online? | binary | - |
 | MEMBERSHIP_LENGTH | Membership length in years | continuous | - |
 | BANK_i | Is the member registered by bank i on reference date? *(Note: included as some banks correlate with churns)* | binary | - |
-| POSTCODE_current | Member's current postcode | continuous | - |
+| POSTCODE_current | Member's current postcode of adresse, does not necessarly correpsond to firm adress | continuous | - |
 | `EXIT` | Does the member churn in the next nine months after reference date? | binary | - |
 
 ## Benefits Data
 
 | **Variable** | **Description** | **Data Type** | **Aggregate Function** |
 | --- | --- | --- | --- |
-| BAMOUNT_i | Amount of money received by benefit i | continuous | sum |
-| BAMOUNT_TOTAL | Total amount of money received from different benefits | continuous | sum |
+| BAMOUNT_i | Amount of money received by benefit type i | continuous | sum |
+| BAMOUNT_TOTAL | Total amount of money received from different benefit types | continuous | sum |
 | BAMOUNT_BINARY | Did the member receive money from any benefits? | binary | max |
 
 ## Seminar Data
@@ -38,13 +38,13 @@ Notably, although the original monthly variable may be binary, the lagged versio
 | **Variable** | **Description** | **Data Type** | **Aggregate Function** |
 | --- | --- | --- | --- |
 | STRIKE_LEN | Number of strike days | continuous | sum |
-| STRIKE_MONEY | Strike compensation money | continuous | sum |
+| STRIKE_MONEY | Amount of strike compensation money | continuous | sum |
 
 ## Documents Data
 
 | **Variable** | **Description** | **Data Type** | **Aggregate Function** |
 | --- | --- | --- | --- |
-| TEMPLATE_i | Template document i was sent by the union to the member, like "welcome letter" *(Note: excluded "membership termination confirmation" for data leakage reasons)* | binary | max |
+| TEMPLATE_i | Template document type i was sent by the union to the member, like "welcome letter" *(Note: excluded "membership termination confirmation" for data leakage reasons)* | binary | max |
 
 ## Firm Data
 
@@ -59,7 +59,7 @@ These variables always refer to the member's company.
 | firm_COMPANYTYPE_i | Type of the company, e.g. group or holding | binary | max |
 | firm_EMPLOYEES_ratio | Ratio of employees to union members at the company | continuous | mean |
 | firm_EMPLOYEES_F, firm_EMPLOYEES_M | Ratio of female / male employees to union members at the company | continuous | mean |
-| firm_SECTOR_i | Sector of the company, e.g. healthcare, municipalities, or education | binary | max |
+| firm_SECTOR_i | Sector of the company, e.g. industry, automotive, public sector, transport, or education | binary | max |
 | firm_REPRESENTATIVE_WrC, firm_REPRESENTATIVE_StC, firm_REPRESENTATIVE_WrCStC | Is there a union's representative in the company's works council, staff council, or both? | binary | max |
 | firm_YOUTHRATIO | Percentage of young people at the company | continuous | mean |
 | firm_MEMBERS_TOTAL | Total number of union members at the company | continuous | mean |
@@ -71,7 +71,7 @@ These variables always refer to the member's company.
 
 | **Variable** | **Description** | **Data Type** | **Aggregate Function** |
 | --- | --- | --- | --- |
-| COMMROLE_i_j | One-hot categories for all committees i and roles j that appear for more than 1% of the data. Corresponds to internal roles like "Chief Executive Officer" and committees like "Works Council" or "In-house bargaining committee". COMMROLE_999999 for combination with appearance less than 1% | binary | max |
+| COMMROLE_i_j | One-hot categories for all committees i and roles j that appear for more than 1% of the data. Corresponds to internal roles like "member of the board" and committees like "Works Council" or "In-house bargaining committee". COMMROLE_999999 for combination with appearance less than 1% | binary | max |
 | RANK_max | Maximum rank of all committee and role combinations of member (using responsibility ranking of combinations) | continuous | max |
 | RANK_sum | Sum of ranks of all committee and role combinations of member (using responsibility ranking of combinations) | continuous | sum |
 
@@ -81,7 +81,7 @@ These variables always refer to the member's company.
 | --- | --- | --- | --- |
 | IN_CONTACT | Has the member contacted the union? | binary | sum |
 | CATEGORY_i | One-hot categories for all contact reasons, e.g. labour legal protection advice or update of contact details | binary | max |
-| STATUS_SENTIMENT | Mean sentiment of the contact (1- positive, 0- neutral, -1- negative), e.g. cancellation by the member has -1, in progress has 0, and issue resolved has 1 | continuous | mean |
+| STATUS_SENTIMENT | The average sentiment rating for contacts. Each contact is assigned a sentiment score: 1 for positive (e.g., issue resolved), 0 for neutral (e.g., in progress), and -1 for negative (e.g., cancellation by the member). | continuous | mean |
 
 ## Dynamic Data
 
