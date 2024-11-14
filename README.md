@@ -76,7 +76,7 @@ You can run the applied part's scripts with the command:
 python applied\ part\ scripts/1_study.py
 ```
 
-The scripts will use an artifical dataset, which has the original variable structure but is populated with random values. The ranges for the random values were estimated by ChatGPT4 based on the variable descriptions and without additional knowledge about the dataset. The script for generating the data is [generate_dataset.py](applied%20part%20scripts/generate_dataset.py).
+The scripts use an artificial dataset that retains the original structure of variables but is populated with randomly generated values. The ranges for these random values were estimated by ChatGPT-4, solely based on the variable descriptions provided, without incorporating any additional information or biases. The data generation script is named [generate_dataset.py](applied%20part%20scripts/generate_dataset.py) and complies with GDPR requirements.
 
 You can modify the row number of the artificial dataset as well as the logging settings of the applied part's scripts in [config.py](applied%20part%20scripts/config.py).
 
