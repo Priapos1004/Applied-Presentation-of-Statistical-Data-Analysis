@@ -68,6 +68,12 @@ The following tables contain a mapping of Python scripts to the content in the t
 
 ## Applied Part Scripts
 
+The basis of the analysis was a pseudonymised dataset from a European labourde union. The content and scope of the analysis, as well as provisions regarding the use and anonymisation of the data, were contractually agreed upon. All data were effectively anonymised in accordance with Article 4, No. 1 of the GDPR and Recital 26, Sentences 3-5 for scientific use: direct identifiers were deleted, and indirect identifiers were generalised, e.g., by aggregation (monthly total) or categorisation (e.g., birth month instead of birth date, document type X without document content or subject lines).
+
+The research dataset containing the anonymised data was exclusively utilised and processed on a remote server of the union. Access to other servers or data of the union was not permitted. Storage or extraction of the anonymised data was not possible and was contractually prohibited.
+
+All data available here on GitHub are randomly generated data. They are intended to test the functionality of the scripts, not to reproduce the analysis results. The ranges of the variables have been replaced by a randomisation process and do not correspond to the actual ranges.
+
 A description of the variables can be found [here](VARIABLES.md).
 
 You can run the applied part's scripts with the command:
@@ -76,9 +82,7 @@ You can run the applied part's scripts with the command:
 python applied\ part\ scripts/1_study.py
 ```
 
-The scripts use an artificial dataset that retains the original structure of variables but is populated with randomly generated values. The ranges for these random values were estimated by ChatGPT-4, solely based on the variable descriptions provided, without incorporating any additional information or biases. The data generation script is named [generate_dataset.py](applied%20part%20scripts/generate_dataset.py) and complies with GDPR requirements.
-
-You can modify the row number of the artificial dataset as well as the logging settings of the applied part's scripts in [config.py](applied%20part%20scripts/config.py).
+Additionally, you can modify the row number of the artificial dataset as well as the logging settings of the applied part's scripts in [config.py](applied%20part%20scripts/config.py).
 
 ### Removed Variables
 
