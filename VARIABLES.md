@@ -15,7 +15,7 @@ Notably, although the original monthly variable may be binary, the lagged versio
 | ONLINEENTRY | Did the person sign up for the union online? | binary | - |
 | MEMBERSHIP_LENGTH | Membership length in years | continuous | - |
 | BANK_i | Is the member registered by bank i on reference date? *(Note: included as some banks correlate with churns)* | binary | - |
-| POSTCODE_current | Member's current postcode of adresse, does not necessarly correpsond to firm adress | continuous | - |
+| REGIONAL_IDENTIFIER_current | Member's current regional identifier of adresse, does not necessarly correpsond to firm adress | continuous | - |
 | `EXIT` | Does the member churn in the next nine months after reference date? | binary | - |
 
 ## Benefits Data
@@ -87,7 +87,7 @@ These variables always refer to the member's company.
 
 | **Variable** | **Description** | **Data Type** | **Aggregate Function** |
 | --- | --- | --- | --- |
-| POSTCODE_change | Did the postcode change compared to last month? | binary | sum |
+| REGIONAL_IDENTIFIER_change | Did the regional identifier change compared to last month? | binary | sum |
 | FIRM_change | Did the member change the company since last month? | binary | sum |
 | CONTRIBUTION | The member's contribution for the union | continuous | mean |
 | CONTRIBUTION_exemption | Was there an exemption regulation for the member fee? | binary | max |

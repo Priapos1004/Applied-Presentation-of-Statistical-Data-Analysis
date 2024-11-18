@@ -19,7 +19,7 @@ DATA = [
     ['MEMBERSHIP_LENGTH', '-', 'int', 0, 50],
     ['BANK_A', '-', 'binary', 0, 1],
     ['BANK_B', '-', 'binary', 0, 1],
-    ['POSTCODE_current', '-', 'int', 1000, 9999],
+    ['REGIONAL_IDENTIFIER_current', '-', 'int', 1000, 9999],
     ['EXIT', '-', 'binary', 0, 1],
 
     # Benefits Data
@@ -89,7 +89,7 @@ DATA = [
     ['STATUS_SENTIMENT', 'mean', 'float', -1, 1],
 
     # Dynamic Data
-    ['POSTCODE_change', 'sum', 'binary', 0, 1],
+    ['REGIONAL_IDENTIFIER_change', 'sum', 'binary', 0, 1],
     ['FIRM_change', 'sum', 'binary', 0, 1],
     ['CONTRIBUTION', 'mean', 'float', 0, 500],
     ['CONTRIBUTION_exemption', 'max', 'binary', 0, 1],

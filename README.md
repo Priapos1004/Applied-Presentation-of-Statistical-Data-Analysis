@@ -70,6 +70,8 @@ The following tables contain a mapping of Python scripts to the content in the t
 
 The basis of the analysis was an anonymised dataset from a European labour union. The content and scope of the analysis, as well as provisions regarding the use and anonymisation of the data, were contractually agreed upon. All data were effectively anonymised in accordance with Article 4, No. 1 of the GDPR and Recital 26, Sentences 3-5 for scientific use: direct identifiers were deleted, and indirect identifiers were generalised, e.g., by aggregation (monthly total) or categorisation (e.g., birth month instead of birth date, document type X without document content or subject lines).
 
+All categories were pseudonymised. All example categories mentioned in the variable overview are fictitious and are intended to assist in better understanding the variables. Individual categories were depseudonymised only during the interpretation of the data, that is, in cases of relevant results. If variables did not lead to relevant results, the categories remained pseudonymised.
+
 The research dataset containing the anonymised data was exclusively utilised and processed on a remote server of the union. Access to other servers or data of the union was not permitted. Storage or extraction of the anonymised data was not possible and was contractually prohibited.
 
 All data available here on GitHub are randomly generated data. They are intended to test the functionality of the scripts, not to reproduce the analysis results. The ranges of the variables have been replaced by a randomisation process and do not correspond to the actual ranges.
